@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
         description:' Je deteste les sayans',
         imgURL:'https://i.pinimg.com/564x/85/96/37/8596379e5e203ec3987dd8eab9eda786.jpg',
         createDate:new Date(),
-        snaps :0,
+        snaps :150,
         location: ' sur Namek  💥  '
       },
       {
