@@ -68,4 +68,24 @@ export class FaceSnapsService {
           return this.faceSnaps;
       }
 
+    snapFaceSnapById(faceSnapId:number) : void {
+        const faceSnap = this.faceSnaps.find(faceSnap => faceSnap.id === faceSnapId);
+        if (faceSnap) {
+              faceSnap.snaps++;
+          } else {
+           throw new Error('FaceSnap not found!')   
+          }
+      }
+
+
+    unsnapFaceSnapById(faceSnapId: number): void {
+        const faceSnap = this.faceSnaps.find(faceSnap => faceSnap.id === faceSnapId);
+            if (faceSnap) {
+        faceSnap.snaps--;
+        } else {
+        throw new Error('FaceSnap not found!');
+    }
 }
+
+}
+
