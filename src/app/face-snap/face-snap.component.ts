@@ -22,7 +22,7 @@ ngOnInit(){
 
   onLike(){
     if(this.buttonText === 'Like') {
-      this.faceSnapsService.snapFaceSnapById(this.faceSnap.id);
+      this.faceSnapsService.snapFaceSnapById(this.faceSnap.id,' snap' );
       this.buttonText = 'Dislike';
     } else {
       this.faceSnap.snaps--;
