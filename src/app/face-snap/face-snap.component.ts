@@ -22,10 +22,10 @@ ngOnInit(){
 
   onLike(){
     if(this.buttonText === 'Like') {
-      this.faceSnapsService.snapFaceSnapById(this.faceSnap.id,' snap' );
+      this.faceSnapsService.snapFaceSnapById(this.faceSnap.id,'snap' );
       this.buttonText = 'Dislike';
     } else {
-      this.faceSnap.snaps--;
+      this.faceSnapsService.snapFaceSnapById(this.faceSnap.id, 'unsnap' );
       this.buttonText = 'Like';
     }
   }
